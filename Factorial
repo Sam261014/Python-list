@@ -1,0 +1,9 @@
+n = int(input("Enter the number of elements: "))
+numbers = [0] * n
+for i in range(n):
+    numbers[i] = int(input("Enter number: "))
+for i in range(n):
+    f = 1
+    for j in range(1, numbers[i] + 1):
+        f= f * j
+    print("Factorial of", numbers[i], "=", f)
